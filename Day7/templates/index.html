@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+<title>Project - SNM</title>
+<style>
+    h1{color: rgb(255, 0, 0);
+    padding: 3px;
+    background-color: rgb(13, 255, 0);
+    text-align: center;}
+</style>
+{% endblock %}
+
+{% block content %}
+ <h1>Welcome to index page</h1>
+{% if d>20 %}
+    <h3> {{d}} is received and grater than 20</h3>
+{% elif d<20 %}
+    <h3>{{d}} is received and  less than 20</h3>
+{% else %}
+    <h3>data is not received</h3>
+{% endif %} 
+
+
+{% if s %}
+    {% for student in s %}
+        <p>{{student.id}} - {{student.name}}</p>
+    {% endfor%}
+{% endif %}
+{% endblock %}

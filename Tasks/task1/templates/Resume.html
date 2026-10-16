@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <style>
+    :root {
+      --ink: #202b3c;
+      --muted: #4b5563;
+      --accent: #164e63;
+      --line: #cbd5e1;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 28px 14px;
+      background: #edf1f5;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.2pt;
+      line-height: 1.38;
+    }
+
+    .resume {
+      width: 210mm;
+      max-width: 100%;
+      min-height: 297mm;
+      margin: 0 auto;
+      padding: 15mm 17mm;
+      background: #fff;
+      box-shadow: 0 8px 28px rgba(15, 23, 42, .12);
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 12px;
+      border-bottom: 2px solid var(--accent);
+      margin-bottom: 13px;
+    }
+
+    h1 {
+      margin: 0 0 6px;
+      color: var(--accent);
+      font-size: 23pt;
+      letter-spacing: 1.2px;
+      line-height: 1.15;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 9pt;
+      line-height: 1.55;
+      overflow-wrap: anywhere;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    section { margin: 0 0 12px; }
+
+    h2 {
+      margin: 0 0 6px;
+      padding-bottom: 3px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      font-size: 11.3pt;
+      letter-spacing: .7px;
+      text-transform: uppercase;
+    }
+
+    p { margin: 3px 0; }
+    ul {
+      margin: 4px 0 0;
+      padding-left: 18px;
+    }
+    li { margin: 2px 0; }
+
+    .entry { margin: 0 0 8px; }
+    .entry-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: baseline;
+      flex-wrap: wrap;
+    }
+    .entry-title { font-weight: 700; }
+    .date {
+      color: var(--muted);
+      font-size: 9pt;
+      white-space: nowrap;
+    }
+    .subline {
+      color: var(--muted);
+      font-size: 9.4pt;
+    }
+    .skills p { margin: 3px 0; }
+    .skills strong { color: var(--ink); }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      body {
+        padding: 0;
+        background: #fff;
+        font-size: 9.6pt;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+      .resume {
+        width: 210mm;
+        min-height: 297mm;
+        max-width: none;
+        margin: 0;
+        padding: 12mm 15mm;
+        box-shadow: none;
+      }
+      section, .entry { break-inside: avoid; }
+      a { color: inherit; }
+    }
+
+    @media screen and (max-width: 600px) {
+      body { padding: 0; }
+      .resume { padding: 24px 20px; }
+      h1 { font-size: 20pt; }
+      .entry-heading { display: block; }
+      .date { display: block; margin-top: 1px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="resume">
+    <header>
+      <h1>KAKUMANU LOKESHWAR</h1>
+      <div class="contact">
+        Visakhapatnam, India | +91-7386621771 |
+        <a href="mailto:lokeshwar5221@gmail.com">lokeshwar5221@gmail.com</a><br>
+        <a href="https://www.linkedin.com/in/kakumanu-lokeshwar-32a55a417" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+        <a href="https://github.com/lokeshwar5221" target="_blank" rel="noopener noreferrer">GitHub</a> |
+        <a href="https://www.codegnan.me/lokeshwar5221" target="_blank" rel="noopener noreferrer">Codegnan Profile</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <p>Aspiring Python Full Stack Developer with a strong foundation in Python, HTML5, CSS3, JavaScript, SQL, MySQL, and object-oriented programming. Experienced in frontend development, backend programming, database management, and software development fundamentals. Strong problem-solving skills with the ability to learn quickly, write maintainable code, and contribute effectively to development teams.</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <div class="entry">
+        <div class="entry-heading">
+          <span class="entry-title">B.Tech, Computer Science Engineering and Data Science (CSD)</span>
+          <span class="date">2022 – 2026</span>
+        </div>
+        <p class="subline">Nadimpalli Satyanarayana Raju Institute of Technology, Visakhapatnam | CGPA: 7.28</p>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Technical Skills</h2>
+      <p><strong>Programming Languages:</strong> Python, SQL</p>
+      <p><strong>Frontend:</strong> HTML, CSS3, React.js</p>
+      <p><strong>Backend:</strong> Flask, Django, REST API</p>
+      <p><strong>Databases:</strong> MySQL</p>
+      <p><strong>Other Tools:</strong> GitHub, VS Code, Canva (Reports and Presentations)</p>
+    </section>
+
+    <section>
+      <h2>Soft Skills</h2>
+      <p>Communication Skills, Teamwork, Leadership, Problem-Solving, Adaptability</p>
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="entry">
+        <div class="entry-heading">
+          <span class="entry-title">Emotion-Based Music Therapy System</span>
+          <span class="date">Jan 2026 – Present</span>
+        </div>
+        <p class="subline">Python, TensorFlow, Keras, OpenCV, Flask, Spotify API</p>
+        <ul>
+          <li>Built a real-time facial emotion recognition system using a CNN trained on the FEB2013 dataset for multi-class emotion classification.</li>
+          <li>Integrated the Spotify API to power a mood-based music recommendation engine that dynamically suggests personalized playlists.</li>
+          <li>Deployed a Flask web application with OpenCV-based live webcam input, combining computer vision, deep learning, and API integration.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <span class="entry-title">Broadband Recharge &amp; Revenue Intelligence Platform</span>
+          <span class="date">Aug 2026 – Present</span>
+        </div>
+        <p class="subline">Python, Flask, MySQL, HTML, CSS | <a href="https://github.com/lokeshwar5221" target="_blank" rel="noopener noreferrer">GitHub profile</a></p>
+        <ul>
+          <li>Implemented customer self-service features, online recharge, billing history, usage tracking, and automated renewal reminders.</li>
+          <li>Designed an admin analytics dashboard to track revenue trends, churn rates, renewal performance, and plan profitability.</li>
+          <li>Built a relational database and renewal management workflow to support efficient billing operations and data-driven decision-making.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Internship / Training</h2>
+      <div class="entry">
+        <div class="entry-heading">
+          <span class="entry-title">Android Application Development Intern | APSSDC</span>
+          <span class="date">Apr 2025 – Jun 2025</span>
+        </div>
+        <p class="subline">Visakhapatnam, India</p>
+        <ul>
+          <li>Developed Android mobile applications using Java and Android Studio as part of a structured development internship.</li>
+          <li>Designed user interfaces and implemented activity navigation, contributing to functional, debugged application builds.</li>
+          <li>Gained hands-on experience across the full Android development lifecycle, from UI design to testing.</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-heading">
+          <span class="entry-title">AI/ML Intern | Demy Software Solutions</span>
+          <span class="date">Jun 2024 – Jul 2024</span>
+        </div>
+        <p class="subline">Visakhapatnam, India</p>
+        <ul>
+          <li>Implemented machine learning algorithms in Python using NumPy, Pandas, and Scikit-learn for model training and evaluation.</li>
+          <li>Performed data analysis and preprocessing on real-world datasets to support model development.</li>
+          <li>Gained practical experience in the end-to-end ML workflow, from data handling to model evaluation.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Achievements &amp; Activities</h2>
+      <ul>
+        <li>Successfully organized and coordinated the entire Freshers' and Farewell events, demonstrating strong leadership, teamwork, and event-management skills.</li>
+        <li>Took part in presentations and public speaking activities.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <ul>
+        <li>Deloitte — Core Python Programming Fundamental</li>
+        <li>IBM — Fundamentals of Artificial Intelligence</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

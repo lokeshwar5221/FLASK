@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Welcome to Codegnan page</h1>
+        <form method="post" action="/postData">
+            <label for="">Enter your name:</label>
+            <input type="text" name="name" required/><br>
+            <label for="">Enter your email:</label>
+            <input type="email" name="email" required/><br>
+            <label for="">Enter your password:</label>
+            <input type="password" name="password" required/><br>
+            <input type="submit" value="submit"/>
+            <span style="color: red;">{{err}}</span>
+            <span style="color: blueviolet;">{{msg}}</span>
+        </form>
+    </body>
+</html>
