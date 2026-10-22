@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>index page</title>
+{% endblock %}
+
+{% block content %}
+
+<h1>welcome to index page of student details</h1>
+
+<h3>list of student details</h3>
+{% for data in d %}
+    <h3> {{data.id}}-{{data.name}}-{{data.marks}}</h3>
+{% endfor %}
+
+
+<hr>
+
+<h2>students with marks percentsge above 80</h2>
+{% for data in d %}
+{% if data.marks>80 %}
+<h3>{{data.name}}-{{data.marks}} had secured A grade</h3>
+{% endif %}
+{% endfor %}
+{% endblock %}
